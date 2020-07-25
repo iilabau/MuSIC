@@ -15,7 +15,7 @@ for dir_i in os.listdir(data_path):
     for imgfile in img_list:
         img = cv2.imread(data_path + '/' + dir_i + '/' + imgfile)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        img_resized = normalize(img, channel=n_channel, row=45, col=135)
+        img_resized = normalize(img, channel=n_channel, row=50, col=100)
         imgdata_list.append(img_resized)
 
 X = np.array(imgdata_list)
@@ -37,7 +37,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 
 # train the model and test
-mdl = MuSIC(scales=[0.5,0.75,0.90,1.0,1.1], epoch=3, verbose=1)
+mdl = MuSIC(scales=[0.5,0.75,0.90,1.0,1.1], epoch=5, verbose=1)
 mdl.fit(X_train, y_train)
 y_pred = mdl.predict(X_test, scalewise=True)
 
