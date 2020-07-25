@@ -1,5 +1,6 @@
-import numpy as np
 import cv2, h5py
+import numpy as np
+from keras.utils import np_utils
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
 from tensorflow.python.keras.layers.convolutional import Convolution2D, MaxPooling2D
@@ -20,8 +21,13 @@ class MuSIC:
         self.noc = 0
         
 
-    def fit(self, X_train, y_train):
-        self.noc = y_train.shape[1]
+    def fit(self, X_train, y_train):        
+        self.noc = len(np.unique(y_train))
+        
+        if len(X_train[0].shape) == 2:
+            X_train = np.expand_dims(X_train, axis=3)
+        y_train = np_utils.to_categorical(y_train, self.noc)
+        
         for sf in self.scales:                        
             X_scaled, w = self.rescale(X_train, sf)
             self.weights.append(w)
@@ -91,6 +97,9 @@ class MuSIC:
     def predict(self, X_test, scalewise=False):
         pred_lst = []
         
+        if len(X_test[0].shape) == 2:
+            X_test = np.expand_dims(X_test, axis=3)
+        
         if self.verbose:
             print('Weights of scales: ' + str(self.weights))
             
@@ -114,9 +123,34 @@ class MuSIC:
 
 
 
-def normalize(img, channel=1, row=50, col=50):
-    if channel == 1:
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img_resized = cv2.resize(img, (col,row))
+def normalize(img, channel=1, row=50, col=50):    
+    sz = img.shape
+    r, c = sz[0],sz[1]
+        
+    if channel == 1 and len(sz) != 2:        
+        input('ERROR: Gray image expected as number of channel=%d'%channel)
+    if channel != 1 and len(sz)==2:        
+        input('ERROR: Color image expected as number of channel=%d'%channel)
+
+    # pad to match aspect ratio    
+    ar_org = c/r
+    ar_new = col/row
+    if ar_new > ar_org:        
+        r_int = r
+        c_int = round(c*ar_new/ar_org)
+    else:
+        r_int = round(r*ar_org/ar_new)
+        c_int = c
     
-    return img_resized   
+    if channel == 1:
+        img_new = np.zeros((r_int,c_int), dtype='uint8')    
+        img_new[:r,:c] = img
+    else:            
+        img_new = np.zeros((r_int,c_int,3), dtype='uint8')    
+        img_new[:r,:c,:] = img
+        
+    # resize to match target dimension
+    img_new = cv2.resize(img_new, (col,row))    
+    #cv2.imwrite('normalized.png', img_new)
+    
+    return img_new
