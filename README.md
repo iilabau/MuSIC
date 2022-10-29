@@ -16,6 +16,8 @@ A general-purpose Multi-Scale Image Classifier, named as MuSIC, is designed for 
 7. Flexibility in colour channel of input images
 
 ### GPU enabled model
-Access the file https://github.com/iilabau/MuSIC/blob/master/iilab.py
+Access the file  https://github.com/iilabau/MuSIC/blob/master/usage_v2.py and https://github.com/iilabau/MuSIC/blob/master/iilab.py
 
+### CPU enabled model
+Access the file https://github.com/iilabau/MuSIC/blob/master/usage_v2.py and 
 
