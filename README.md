@@ -1,2 +1,2 @@
 # MuSIC
-MuSIC: Multi-Scale Image Classification (A general purpose deep framework for image classification)
+MuSIC: Multi-Scale Image Classifier (A general-purpose deep neural framework for image classification)
