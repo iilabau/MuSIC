@@ -72,3 +72,15 @@ Model has been evaluated on multiple benchmark datasets and reported the obtaine
           Moreover, stability is measured using standard deviation and mean accuracy.
 </p>
 
+### Relevant Paper
+The following paper may be consulted and cited while referring to this dataset.
+> **Khan, T. and Mollah, A.F., 2022. MuSIC: A multi-scale deep neural architecture for script identification.**
+
+### Contributors
+- Dr. Ayatullah Faruk Mollah, Assistant Professor, Department of Computer Science and Engineering, Aliah University, Kolkata, India
+- Dr. Tauseef Khan, Assistant Professor, School of Computer Science and Engineering, VIT-AP University, Amaravati, Andhra Pradesh.
+
+### Contact
+Dr. Ayatullah Faruk Mollah, Email: afmollah@alaih.ac.in
+Dr. Tauseef Khan, Email: tauseef.hit2013@gmail.com
+
