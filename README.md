@@ -15,9 +15,7 @@ A general-purpose Multi-Scale Image Classifier, named as MuSIC, is designed for 
 6. User defined scale selection
 7. Flexibility in colour channel of input images
 
-# Software and Hardware Requirements
- ### for CPU enabled model
- 1. Keras
- 2. Tensorflow
- 3. 
+### GPU enabled model
+Access the file https://github.com/iilabau/MuSIC/blob/master/iilab.py
+
 
