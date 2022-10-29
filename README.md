@@ -38,11 +38,28 @@ Model has been evaluated on multiple benchmark datasets and reported the obtaine
 4. ICDAR 2019-MLT (wordlevel) (click [here](https://rrc.cvc.uab.es/?ch=15&com=introduction) to download)
 
 ### Results
-#### AUTNT-mixed Dataset
+#### Results on AUTNT-mixed Dataset
 |No. of scale|P |R |F-M |Accuracy |Error-rate |FAR |FRR |
 |:-----------|:-|:-|:---|:--------|:----------|:---|:---|
 |I, II, III, IV, V|0.9716|0.9742|0.9729|0.9746|0.0254|-|-|
 |I, II, III, IV, V, VI, VII|0.9763|	0.9799|	0.9780|	0.9803|	0.0197|	0.0097|	0.0199|
 |I, II, III, IV, V, VI, VII, VIII, IX|0.9722|	0.9765|	0.9742|	0.9771|	0.0229|	-|	-|
 |average|0.9733|	0.9768|	0.9750|	0.9773|	0.0226|	-|	-|
+
+#### Results on ICDAR CVSI-2015 Dataset
+|No. of scale|P |R |F-M |Accuracy |Error-rate |FAR |FRR |
+|:-----------|:-|:-|:---|:--------|:----------|:---|:---|
+|I, II, III, IV, V|0.9257	|0.9295|	0.9252	|0.9251|	0.0749|	-|	-|
+|I, II, III, IV, V, VI, VII|0.9308|	0.9348|	0.9305|	0.9301|	0.0699|	-|	-|
+|I, II, III, IV, V, VI, VII, VIII, IX|0.9316|	0.9344|	0.9313|	0.9310	|0.0690	|0.0076|	0.0635|
+|average|0.9293|	0.9329	|0.9290	|0.9287|	0.0712|	-|	-|
+
+#### Results on ICDAR 2019-MLT (wordlevel) Dataset
+|No. of scale|P |R |F-M |Accuracy |Error-rate |FAR |FRR |
+|:-----------|:-|:-|:---|:--------|:----------|:---|:---|
+|I, II, III, IV, V|0.8443|	0.9782|	0.8973|	0.9634|	0.0366|	-|	-|
+|I, II, III, IV, V, VI, VII|0.8783|	0.9872|	0.9246|	0.9721|	0.0279	|0.0293|	0.0127|
+|I, II, III, IV, V, VI, VII, VIII, IX|0.8804|	0.9880|	0.9272|	0.9706|	0.0294|	-|	-|
+|average|0.8676|	0.9844|	0.9163|	0.9687|	0.0313|	-|	-|
+
 
