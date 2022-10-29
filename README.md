@@ -73,7 +73,7 @@ Model has been evaluated on multiple benchmark datasets and reported the obtaine
 </p>
 
 ### Relevant Paper
-The following paper may be consulted and cited while referring to this dataset.
+In future the following paper may be consulted and cited while referring to this dataset (upon acceptance)
 > **Khan, T. and Mollah, A.F., 2022. MuSIC: A multi-scale deep neural architecture for script identification.**
 
 ### Contributors
