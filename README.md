@@ -38,13 +38,11 @@ Model has been evaluated on multiple benchmark datasets and reported the obtaine
 4. ICDAR 2019-MLT (wordlevel) (click [here](https://rrc.cvc.uab.es/?ch=15&com=introduction) to download)
 
 ### Results
-#### AUTNT-Mixed
-
-| No. of scales | P | R | F-M | Accuracy | Error-rate | FAR | FRR |
- --------------  ---  --- ---  ---------  -------------------------
-|I, II,III,IV,V | 0.9716  |   |     |          |           |     |      |
-|               |   |   |     |          |           |     |      |
-|               |   |   |     |          |           |     |      |      
-
-
+#### AUTNT-mixed Dataset
+|No. of scale|P |R |F-M |Accuracy |Error-rate |FAR |FRR |
+|:-----------|:-|:-|:---|:--------|:----------|:---|:---|
+|I, II, III, IV, V|0.9716|0.9742|0.9729|0.9746|0.0254|-|-|
+|I, II, III, IV, V, VI, VII|0.9763|	0.9799|	0.9780|	0.9803|	0.0197|	0.0097|	0.0199|
+|I, II, III, IV, V, VI, VII, VIII, IX|0.9722|	0.9765|	0.9742|	0.9771|	0.0229|	-|	-|
+|average|0.9733|	0.9768|	0.9750|	0.9773|	0.0226|	-|	-|
 
