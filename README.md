@@ -80,6 +80,6 @@ In future the following paper may be consulted and cited while referring to this
 - Dr. Tauseef Khan, Assistant Professor, School of Computer Science and Engineering, VIT-AP University, Amaravati, Andhra Pradesh.
 
 ### Contact
-Dr. Ayatullah Faruk Mollah, Email: afmollah@alaih.ac.in
+Dr. Ayatullah Faruk Mollah, Email: afmollah@alaih.ac.in, 
 Dr. Tauseef Khan, Email: tauseef.hit2013@gmail.com
 
