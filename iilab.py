@@ -238,7 +238,7 @@ class musicv2:
 
 
 
-# MuSIC old version
+# MuSIC version 1
 class MuSIC:
     def __init__(self, scales=[0.9,1.0,1.1], k=0.01, epoch=25, val_size=0.15, verbose=0):
         self.scales = scales
