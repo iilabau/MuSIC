@@ -25,7 +25,7 @@ sess = tf.compat.v1.Session(config=config)
 keras.backend.set_session(sess)
 
 
-
+# MuSIC version 2 model
 class musicv2:
     def __init__(self, scales=[(25,25),(50,50)], channel=1, k=0.01, epoch=5, val_size=0.15, verbose=0):
         self.scales = scales
@@ -99,7 +99,7 @@ class musicv2:
             
         # resize to match target dimension
         img_new = cv2.resize(img_new, (col,row))    
-        cv2.imwrite('F:/script identification dataset/upscale/horizontal.png', img_new)
+       # cv2.imwrite('F:/script identification dataset/upscale/horizontal.png', img_new)
         
         # compute no. of object pixels in normalized image
         obj_area = int((row*col)*(r*c)/(r_int*c_int))
@@ -238,7 +238,7 @@ class musicv2:
 
 
 
-
+# MuSIC old version
 class MuSIC:
     def __init__(self, scales=[0.9,1.0,1.1], k=0.01, epoch=25, val_size=0.15, verbose=0):
         self.scales = scales
