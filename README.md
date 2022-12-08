@@ -19,6 +19,13 @@ A general-purpose Multi-Scale Image Classifier, named as MuSIC, is designed for 
 
 ### Link to access MuSIC model
 Access the file  Master file: https://github.com/iilabau/MuSIC/blob/master/usage_v2.py, Model: https://github.com/iilabau/MuSIC/blob/master/iilab.py
+#### Input parameters of master file (usage_V2.py):
+	1. Dimension of scales
+	2. Path for training data
+	3. Path for test data.
+####  Model file contains both MuSIC Version 2 and version 1:
+	1. MuSIC version 2 Model (run class musicv2)
+	2. MuSIC version 1 Model (run class MuSICv1)
 
 ### Hardware and Software Requirements 
 1. Install full Anaconda (python) distribution Package
