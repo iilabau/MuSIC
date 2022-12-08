@@ -25,7 +25,7 @@ Access the file  Master file: https://github.com/iilabau/MuSIC/blob/master/usage
 	3. Path for test data.
 ####  Model file contains both MuSIC Version 2 and version 1:
 	1. MuSIC version 2 Model (run class musicv2)
-	2. MuSIC version 1 Model (run class MuSICv1)
+	2. MuSIC version 1 Model (run class MuSIC)
 
 ### Hardware and Software Requirements 
 1. Install full Anaconda (python) distribution Package
