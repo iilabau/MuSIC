@@ -80,7 +80,7 @@ Model has been evaluated on multiple benchmark datasets and reported the obtaine
 
 ### Relevant Paper
 In future the following paper may be consulted and cited while referring to this dataset (upon acceptance)
-> **Khan, T. and Mollah, A.F., 2022. MuSIC: A multi-scale deep neural architecture for script identification.**
+> **Khan, T., Saif, M. and Mollah, A.F., 2024. MuSIC: A Novel Multi-Scale Deep Neural Framework for Script Identification in the Wild.**
 
 ### Contributors
 - Dr. Ayatullah Faruk Mollah, Assistant Professor, Department of Computer Science and Engineering, Aliah University, Kolkata, India
